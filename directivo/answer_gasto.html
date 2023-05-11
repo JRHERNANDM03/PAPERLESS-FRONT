@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESTADO</title>
+
+     <!-- Link hacia el archivo de estilos css -->
+     <link rel="stylesheet" href="../css/login.css">
+
+     <!-- Fuente google -->
+     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"> 
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+  <div id="contenerdorCentrador">
+    <div class="">
+        <img src="../img/liverpool.jpg" alt="">
+    </div>
+</div>
+
+<div id="div1"></div>
+<div id="div2"></div>
+
+    <script src="sweetalert2.min.js"></script>
+<link rel="stylesheet" href="sweetalert2.min.css">
+
+    <script>
+
+Swal.fire({
+    icon: 'info',
+  title: 'Puedes enviar un comentario',
+  input: 'text',
+  inputAttributes: {
+    autocapitalize: 'off'
+  },
+    showCancelButton: true,
+    confirmButtonColor: '#22B41B',
+    confirmButtonText: 'APROBAR',
+    cancelButtonColor: '#D60E0E',
+    cancelButtonText: 'RRECHAZAR',
+    backdrop: true,
+    allowOutsideClick: false,
+    allosEscapeKey: false,
+    allosEnterKey: false,
+    stopKeydownPropagation: false,
+}).then((result) => {
+  if (result.isConfirmed) {
+    Swal.fire(
+      window.location="./informe_gasto.html"
+    )
+  }
+  else
+  {
+    window.location="./informe_gasto.html"
+  }
+})
+
+    </script>
+    
+</body>
+</html>

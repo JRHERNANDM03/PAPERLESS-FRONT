@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastos de viaje</title>
+
+    <!-- Fuente google -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"> 
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+     <!-- Link hacia el archivo de estilos css -->
+     <link rel="stylesheet" href="../css/login.css">
+
+</head>
+<body>
+    
+    <div id="contenerdorCentrador">
+        <div class="">
+            <img src="../img/liverpool.jpg" alt="Logo Liverpool">
+        </div>
+    </div>
+
+    <div class="container">
+        
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid" style="background-color: #712FA5; padding: 1%;">
+          <a class="navbar-brand" style="color: white;">Usuario: 16136996</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: white;">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="" style="color: white;"></a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search" method="GET" action="./mostrar_viaje.html">
+              <button class="btn btn-lg" type="submit" style="background-color: #FF7A00; color: white;" title="regresar">Regresar</button>
+            </form>
+          </div>
+        </div>
+      </nav> 
+
+    <div class="text-center" style="padding-top: 5%;">
+        <h3 style="color: black;">REGISTRO DE GASTOS DE VIAJE</h3>
+    </div>
+
+    <div class="container" style="padding-top: 3%;">
+        <h5 style="color: black;">Detalles de viaje: #2000001826</h5>
+    </div>
+
+        <div class="container" style="padding: 4%;">
+            <div class="table-responsive">
+            <table class="table">
+   <thead>
+     <tr>
+       <th scope="col">Tipo de gasto</th>
+       <th scope="col">Importe</th>
+       <th scope="col">Moneda</th>
+       <th scope="col">Fecha del gasto</th>
+       <th scope="col">Indicador de impuestos</th>
+       <th scope="col">Cantidad</th>
+       <th scope="col">Info</th>
+       <th scope="col">Descripción</th>
+       <th scope="col">Justificación</th>
+       <th></th>
+       <th>Acciones</th>
+       <th></th>
+     </tr>
+   </thead>
+   <tbody>
+
+    <tr>
+        <td>ALIE ALIMENTO P/EMPLEADO</td>
+        <td>500.00</td>
+        <td>MXP PESOS MEXICANOS</td>
+        <td>30/05/2023</td>
+        <td>F2 IVA ACREDITABLE 16%</td>
+        <td>1</td>
+        <td></td>
+        <td>......</td>
+        <td>file.pdf</td>
+        <td><a href="./editar_gasto.html" style="text-decoration: none; color: #D9CE29;" title="Editar gasto"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+          </svg></a></td>
+        <td></td>
+        <td><a href="./eliminar_gasto.html" style="text-decoration: none; color: #D92929;" title="Eliminar gasto"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+          </svg></a></td>
+    </tr>
+    <tr>
+        <td>TASE TAXI S/COMP P/EMPLEADO</td>
+        <td>150</td>
+        <td>MXP PESOS MEXICANOS</td>
+        <td>30/05/2023</td>
+        <td>E3 IVA ACREDITABLE EXENTO</td>
+        <td>1</td>
+        <td></td>
+        <td>......</td>
+        <td>file.pdf</td>
+        <td><a href="./editar_gasto.html" style="text-decoration: none; color: #D9CE29;" title="Editar gasto"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+          </svg></a></td>
+        <td></td>
+        <td><a href="./eliminar_gasto.html" style="text-decoration: none; color: #D92929;" title="Eliminar gasto"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+          </svg></a></td>
+    </tr>
+   
+   </tbody>
+            </table>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
+
