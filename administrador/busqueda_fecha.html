@@ -60,12 +60,15 @@
         </div>
         <div class="col-md-2">
           <label for="inputPassword4" class="form-label" style="color: black;"></label>
-          <input type="submit" name="find" class="form-control btn btn-primary" id="inputPassword4" value="Buscar">
+          <!--  <input type="submit" name="find" class="form-control btn btn-primary" id="inputPassword4" value="Buscar"> -->
         </div>
       </form>
+
+      <button class="btn btn-primary" id="listar">Buscar</button>
+
     </div>
 
-    <div class="container" style="padding-bottom: 5%;">
+    <div class="container" id="cards" style="padding-bottom: 5%; display: none;">
       <hr>
 
       <h4 style="color: black;">Listado de todos los viajes en la fecha correspondiente.</h4>
@@ -159,5 +162,12 @@
       </div>
     </div>
    
+    <script>
+      document.getElementById("listar").onclick = function(event) {
+        document.getElementById("cards").style.display="block"
+        event.preventDefault();
+    } 
+    </script>
+
 </body>
 </html>

@@ -56,16 +56,18 @@
       <form class="row g-3" action="" method="GET">
         <div class="col-md-6">
           <label for="inputPassword4" class="form-label" style="color: black;">Número de viaje:</label>
-          <input type="text" name="number_viaje" class="form-control card border-dark mb-3" id="inputPassword4" placeholder="Ingresa número de viaje" required>
+          <input type="text" name="number_viaje" class="form-control card border-dark mb-3" id="inputPassword4" value="2000001827" required>
         </div>
         <div class="col-md-2">
           <label for="inputPassword4" class="form-label" style="color: black;"></label>
-          <input type="submit" name="find" class="form-control btn btn-primary" id="inputPassword4" value="Buscar">
+        <!--  <input type="submit" name="find" class="form-control btn btn-primary" id="inputPassword4" value="Buscar"> -->
         </div>
       </form>
+
+      <button class="btn btn-primary" id="listar">Buscar</button>
     </div>
 
-    <div class="container" style="padding-bottom: 5%;">
+    <div class="container" id="cards" style="padding-bottom: 5%; display: none;">
       <hr>
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
@@ -86,6 +88,13 @@
         </div>
       </div>
     </div>
+
+    <script>
+      document.getElementById("listar").onclick = function(event) {
+        document.getElementById("cards").style.display="block"
+        event.preventDefault();
+    } 
+    </script>
    
 </body>
 </html>

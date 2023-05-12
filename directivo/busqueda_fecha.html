@@ -163,7 +163,10 @@
     </div>
 
     <script>
-      document.getElementById("listar").click()
+      document.getElementById("listar").onclick = function(event) {
+        document.getElementById("cards").style.display="block"
+        event.preventDefault();
+    } 
     </script>
    
 </body>
